@@ -2,7 +2,6 @@ create env
 ```bash
 conda create -n wineq pthon=3.7 -y
 ```
-
 activate env
 ```bash
 conda activate wineq
@@ -12,7 +11,6 @@ Create a req.txt file. In windows, create this file manually
 ```bash
 touch reqirements.txt
 ```
-
 install the req
 ```bash
 pip install -r requirements.txt
@@ -29,10 +27,10 @@ git init
 Connect dvc to this repository and add the data to it
 ``` bash
 dvc init
-dvc add data_given/winequality.csv
+dvc add data_given/winequality.csv #dvc will start tracking this file from here onwards
 ```
 
-Add the current directory contents to staging area: (Use same command to save/update any changes to the repo)
+Add the current directory contents to staging area ( This is a middle-ground between the github repository and your working copy. A staged file is not yet committed to the repository, but is independent of any further changes to your working copy.): (Use same command to save/update any changes to the repo). This step is important. Without this git push won't push all updates to the github repo.
 ```bash
 git add .
 ```
@@ -49,9 +47,13 @@ Now , the data_given folder has a .gitignore that tells git not to upload the wi
 
  Part 2:
 
- Create a new repo in your github. To add/update all the local/remote changes made to the repo to your github, do this:
+ Create a new repo in your github. To add/update all the local changes made to the repo to your github, do this:
  ```bash
  git remote add origin https://github.com/Jayashree-Behera/simple-dvc-demo.git
  git branch -M main   #renames the master branch as the main branch
  git push -u origin main   #push all the codes/local changes into this github repo to the main branch
  ```
+
+ A cheat sheet for other git commands can be found here:
+ https://gist.github.com/cblunt/860360
+
