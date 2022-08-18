@@ -32,7 +32,7 @@ dvc init
 dvc add data_given/winequality.csv
 ```
 
-Add the current directory contents to staging area
+Add the current directory contents to staging area: (Use same command to save/update any changes to the repo)
 ```bash
 git add .
 ```
