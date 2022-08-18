@@ -47,4 +47,11 @@ git add . && git commit -m "update README.md"
 
 Now , the data_given folder has a .gitignore that tells git not to upload the winequality.csv file. The dvc file version is created and uploaded to show that the input data file is added to dvc. 
 
- 
+ Part 2:
+
+ Create a new repo in your github. To add/update all the local/remote changes made to the repo to your github, do this:
+ ```bash
+ git remote add origin https://github.com/Jayashree-Behera/simple-dvc-demo.git
+ git branch -M main   #renames the master branch as the main branch
+ git push -u origin main   #push all the codes/local changes into this github repo to the main branch
+ ```
