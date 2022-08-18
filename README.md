@@ -30,7 +30,7 @@ dvc init
 dvc add data_given/winequality.csv #dvc will start tracking this file from here onwards
 ```
 
-Add the current directory contents to staging area ( This is a middle-ground between the github repository and your working copy. A staged file is not yet committed to the repository, but is independent of any further changes to your working copy.): (Use same command to save/update any changes to the repo). This step is important. Without this git push won't push all updates to the github repo.
+Add the current directory contents to staging area ( This is a middle-ground between the github repository and your working copy. A staged file is not yet committed to the repository, but is independent of any further changes to your working copy.): (Use same command to save/update any changes to the repo). This step is important. Without this git push won't update all changes made to the github repo.
 ```bash
 git add .
 ```
@@ -42,12 +42,10 @@ In case you want to write both commands in one line :
 ```bash
 git add . && git commit -m "update README.md"
 ```
-
 Now , the data_given folder has a .gitignore that tells git not to upload the winequality.csv file. The dvc file version is created and uploaded to show that the input data file is added to dvc. 
 
- Part 2:
 
- Create a new repo in your github. To add/update all the local changes made to the repo to your github, do this:
+ Next step isto create a new repo in your github. To add/update all the local changes made to the repo to your github, do this:
  ```bash
  git remote add origin https://github.com/Jayashree-Behera/simple-dvc-demo.git
  git branch -M main   #renames the master branch as the main branch
