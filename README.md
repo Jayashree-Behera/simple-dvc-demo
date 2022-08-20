@@ -1,5 +1,3 @@
-First create a python file template.py that makes all the root directories and files You can later add more files using touch command.
-
 create env
 ```bash
 conda create -n wineq python=3.7 -y
@@ -17,6 +15,7 @@ install the req
 ```bash
 pip install -r requirements.txt
 ```
+Then create a "template.py" file that makes all the root directories and files You can later add more files using touch command. Make sure to add a .gitkeep file in each directory and also create a file .gitignore for future purposes.
 
 download the data from
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
@@ -28,8 +27,8 @@ git init
 
 Connect dvc to this repository and add the data to it
 ``` bash
-dvc init
-dvc add data_given/winequality.csv #dvc will start tracking this file from here onwards
+dvc init #initialize dvc inside the folder
+dvc add data_given/winequality.csv #dvc will start tracking this input file from here onwards
 ```
 
 Add the current directory contents to staging area ( This is a middle-ground between the github repository and your working copy. A staged file is not yet committed to the repository, but is independent of any further changes to your working copy.): (Use same command to save/update any changes to the repo). This step is important. Without this git push won't update all changes made to the github repo.
@@ -56,6 +55,9 @@ Now , the data_given folder has a .gitignore that tells git not to upload the wi
 
  A cheat sheet for other git commands can be found here:
  https://gist.github.com/cblunt/860360
+
+##tox
+
 
 Some useful command lines:
 ```bash
