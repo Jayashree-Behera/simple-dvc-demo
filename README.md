@@ -56,7 +56,8 @@ Now , the data_given folder has a .gitignore that tells git not to upload the wi
  A cheat sheet for other git commands can be found here:
  https://gist.github.com/cblunt/860360
 
-##tox
+**tox**
+
 
 
 Some useful command lines:
