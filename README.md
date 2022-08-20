@@ -1,6 +1,6 @@
 create env
 ```bash
-conda create -n wineq pthon=3.7 -y
+conda create -n wineq python=3.7 -y
 ```
 activate env
 ```bash
@@ -55,3 +55,9 @@ Now , the data_given folder has a .gitignore that tells git not to upload the wi
  A cheat sheet for other git commands can be found here:
  https://gist.github.com/cblunt/860360
 
+Some useful command lines:
+```bash
+dvc repro --> tracks and runs the stages if not run before.
+dvc metrics show --> tracks and shows a specific part (here, metrics) of a stage
+dvc metrics diff --> shows the differences of all results of all metrics used in past and present
+```
