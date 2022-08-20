@@ -1,10 +1,12 @@
 **GOAL**:
-We will make an end-to-end project where we learn the about following :
+
+We will make an end-to-end project where we learn the following :
 - github deployement
 - dvc
 - uni testing 
 
 **STEPS**:
+
 create env
 ```bash
 conda create -n wineq python=3.7 -y
@@ -63,7 +65,8 @@ Now , the data_given folder has a .gitignore that tells git not to upload the wi
  A cheat sheet for other git commands can be found here:
  https://gist.github.com/cblunt/860360
 
-**tox commands**
+**tox commands**:
+
 A package that runs the codes in all environments, has the req.txt file and also does the pytest check. Properties and command lines:
 ```bash
 tox # runs the tox.ini file.It runs req.txt file only first time. Use below command to run it again
@@ -74,14 +77,14 @@ test_config.py # runs the tests
 
 **setup commands**:
 ```bash
-pip install -e. --> run setup.py that makes/installs package/s
-python setup.py sdist bdist_wheel --> creates a tar file that can be shared to download the libraries involved.
+pip install -e. # run setup.py that makes/installs package/s
+python setup.py sdist bdist_wheel # creates a tar file that can be shared to download the libraries involved.
 ```
 
 **dvc commands**:
 ```bash
-dvc repro --> tracks and runs the stages if not run before.
-dvc metrics show --> tracks and shows a specific part (here, metrics) of a stage
-dvc metrics diff --> shows the differences of all results of all metrics used in past and present
+dvc repro # tracks and runs the stages if not run before.
+dvc metrics show # tracks and shows a specific part (here, metrics) of a stage
+dvc metrics diff # shows the differences of all results of all metrics used in past and present
 ```
 **SUMMARY** :
