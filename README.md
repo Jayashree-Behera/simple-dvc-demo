@@ -57,8 +57,7 @@ Now , the data_given folder has a .gitignore that tells git not to upload the wi
  https://gist.github.com/cblunt/860360
 
 **tox**
-
-
+A package that runs the codes in all environments and also does the pytest check
 
 Some useful command lines:
 ```bash
