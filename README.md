@@ -1,3 +1,5 @@
+First create a python file template.py that makes all the root directories and files You can later add more files using touch command.
+
 create env
 ```bash
 conda create -n wineq python=3.7 -y
