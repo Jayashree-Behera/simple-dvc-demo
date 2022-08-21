@@ -74,6 +74,8 @@ tox -r # runs req.txt file again
 pytest -v # command line in tox.ini that runs the files in the "tests" folder 
 test_config.py # runs the tests
 ```
+**flake8**:
+A wrapper for checking the coding style. It's included in tox.ini.
 
 **setup commands**:
 ```bash
