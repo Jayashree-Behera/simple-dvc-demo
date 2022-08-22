@@ -38,6 +38,7 @@ Connect dvc to this repository and add the data to it
 ``` bash
 dvc init #initialize dvc inside the folder
 dvc add data_given/winequality.csv #dvc will start tracking this input file from here onwards
+dvc.yaml #tracks the stages of the model
 ```
 
 Add the current directory contents to staging area ( This is a middle-ground between the github repository and your working copy. A staged file is not yet committed to the repository, but is independent of any further changes to your working copy.): (Use same command to save/update any changes to the repo). This step is important. Without this git push won't update all changes made to the github repo.
